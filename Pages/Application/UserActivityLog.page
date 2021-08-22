@@ -1,0 +1,68 @@
+{
+	"Caption": "Activity Log",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Enable Logging",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": false,
+							"_Name": "EnableLogSwitch",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"AllowDefaultValueIfOneItem": false,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Log Level",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": "/MDK_Demo_App_Clone/Rules/LogLevels.js",
+							"PickerPrompt": "Please select one single item",
+							"_Name": "LogLevelListPicker",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell0",
+					"_Type": "Section.Type.FormCell"
+				},
+				{
+					"Controls": [
+						{
+							"IsVisible": true,
+							"OnPress": "/MDK_Demo_App_Clone/Actions/Logging/UploadLogProgress.action",
+							"TextAlignment": "center",
+							"Title": "Send Activity Log",
+							"_Name": "Send",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell1",
+					"_Type": "Section.Type.FormCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "UserActivityLog",
+	"_Type": "Page"
+}

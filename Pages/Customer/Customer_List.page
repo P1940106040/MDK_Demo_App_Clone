@@ -1,0 +1,54 @@
+{
+	"Caption": "Customers",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}"
+							}
+						],
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"DetailImage": "/MDK_Demo_App_Clone/Rules/Customer/GetSmallCustomerAvatarURL.js",
+						"Headline": "{FirstName} {LastName}",
+						"Subheadline": "{City}, {Country}"
+					},
+					"DataPaging": {
+						"LoadingIndicatorText": "",
+						"PageSize": 50,
+						"ShowLoadingIndicator": true
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Customer Search"
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customer_List",
+	"_Type": "Page"
+}

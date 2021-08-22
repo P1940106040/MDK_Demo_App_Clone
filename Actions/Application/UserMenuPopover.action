@@ -1,0 +1,40 @@
+{
+	"PopoverItems": [
+		{
+			"Enabled": true,
+			"Icon": "/MDK_Demo_App_Clone/Images/Application/sync.png",
+			"OnPress": "/MDK_Demo_App_Clone/Actions/Service/StartSync.action",
+			"Title": "Sync Changes",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "/MDK_Demo_App_Clone/Images/Application/headset.png",
+			"OnPress": "/MDK_Demo_App_Clone/Actions/Application/NavToSupport.action",
+			"Title": "Support",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "/MDK_Demo_App_Clone/Images/Application/update-check.png",
+			"OnPress": "/MDK_Demo_App_Clone/Actions/Application/AppUpdateProgressBanner.action",
+			"Title": "Check for Updates",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "/MDK_Demo_App_Clone/Images/Application/about.png",
+			"OnPress": "/MDK_Demo_App_Clone/Actions/Application/NavToAbout.action",
+			"Title": "About",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "/MDK_Demo_App_Clone/Images/Application/logout.png",
+			"OnPress": "/MDK_Demo_App_Clone/Actions/LogoutConfirmation.action",
+			"Title": "Logout",
+			"Visible": true
+		}
+	],
+	"_Type": "Action.Type.PopoverMenu"
+}

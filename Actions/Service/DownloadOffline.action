@@ -1,0 +1,20 @@
+{
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"DefiningRequests": [
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "Customers",
+			"Query": "Customers"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "Products",
+			"Query": "Products"
+		}
+	],
+	"OnFailure": "/MDK_Demo_App_Clone/Actions/Service/SyncFailureMessage.action",
+	"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+	"_Type": "Action.Type.OfflineOData.Download"
+}

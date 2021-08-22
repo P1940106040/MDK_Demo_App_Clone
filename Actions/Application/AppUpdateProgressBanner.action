@@ -1,0 +1,7 @@
+{
+	"CompletionTimeout": 3,
+	"Message": "Checking for Updates...",
+	"OnFailure": "/MDK_Demo_App_Clone/Actions/GenericProgressBanner.action",
+	"OnSuccess": "/MDK_Demo_App_Clone/Rules/Application/AppUpdateResult.js",
+	"_Type": "Action.Type.ProgressBanner"
+}

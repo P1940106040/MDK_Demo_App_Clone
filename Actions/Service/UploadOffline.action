@@ -1,0 +1,9 @@
+{
+	"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/MDK_Demo_App_Clone/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/MDK_Demo_App_Clone/Actions/Service/SyncFailureMessage.action"
+}

@@ -1,0 +1,5 @@
+{
+	"CompletionTimeout": 3,
+	"Message": "Checking for Updates...",
+	"_Type": "Action.Type.ProgressBanner"
+}

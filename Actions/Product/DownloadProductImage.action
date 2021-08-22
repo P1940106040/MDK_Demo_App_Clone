@@ -1,0 +1,8 @@
+{
+	"Target": {
+		"EntitySet": "Products",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service"
+	},
+	"_Type": "Action.Type.ODataService.DownloadMedia"
+}

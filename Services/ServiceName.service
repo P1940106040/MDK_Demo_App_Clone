@@ -1,0 +1,9 @@
+{
+    "DestinationName": "mdk.demo.app.clone.mobile.destination",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
+}

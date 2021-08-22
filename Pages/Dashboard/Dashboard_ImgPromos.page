@@ -1,0 +1,120 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"Icon": "$(PLT,sap-icon://customer,sap-icon://customer, /MDK_Demo_App_Clone/Images/Web/user-blue-40.png)",
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Demo_App_Clone/Actions/Application/UserMenuPopover.action",
+				"Position": "left",
+				"Text": "User",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "$(L,'dashboard_title')",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "$(L,'dashboard_header_body')",
+						"DetailImage": "/MDK_Demo_App_Clone/Images/mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "$(L,'mdk')",
+						"StatusText": "/MDK_Demo_App_Clone/Rules/Dashboad/versionString.js",
+						"Subhead": "$(L,'app_name')",
+						"Tags": [
+							"/MDK_Demo_App_Clone/Rules/Dashboad/getCurrentQuarter.js",
+							"/MDK_Demo_App_Clone/Rules/Dashboad/daysLeftInQuarter.js"
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"DataPaging": {
+						"LoadingIndicatorText": "",
+						"PageSize": 5,
+						"ShowLoadingIndicator": true
+					},
+					"EmptySection": {
+						"Caption": "No Customers",
+						"FooterVisible": false
+					},
+					"Footer": {
+						"AccessoryType": "disclosureIndicator",
+						"AttributeLabel": "/MDK_Demo_App_Clone/Rules/Customer/CustomerCount.js",
+						"Caption": "All Customers",
+						"FooterStyle": "attribute",
+						"OnPress": "/MDK_Demo_App_Clone/Actions/Customer/NavToCustomer_List.action",
+						"UseBottomPadding": true,
+						"Visible": true
+					},
+					"Header": {
+						"Caption": "Top Customers",
+						"UseTopPadding": true
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImage": "/MDK_Demo_App_Clone/Rules/Customer/GetSmallCustomerAvatarURL.js",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"Title": "{FirstName} {LastName}"
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"QueryOptions": "/MDK_Demo_App_Clone/Rules/Customer/TopCustomersQO.js",
+						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectCollection0",
+					"_Type": "Section.Type.ObjectCollection"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": true
+					},
+					"Footer": {
+						"AccessoryType": "disclosureIndicator",
+						"AttributeLabel": "/MDK_Demo_App_Clone/Rules/Product/ProductCount.js",
+						"Caption": "All Products",
+						"FooterStyle": "attribute",
+						"OnPress": "/MDK_Demo_App_Clone/Actions/Product/NavToProduct_List.action",
+						"UseBottomPadding": false,
+						"Visible": true
+					},
+					"Header": {
+						"Caption": "Promotion Items",
+						"UseTopPadding": true
+					},
+					"ImageCell": {
+						"Attribute": "/MDK_Demo_App_Clone/Rules/Product/PercentOff.js",
+						"Image": "/MDK_Demo_App_Clone/Rules/Product/GetProductImage.js",
+						"ImageIsCircular": false,
+						"Subtitle": "{CategoryName}",
+						"Title": "{Name}"
+					},
+					"Layout": {
+						"LayoutType": "HorizontalScroll"
+					},
+					"Target": {
+						"EntitySet": "Products",
+						"QueryOptions": "/MDK_Demo_App_Clone/Rules/Product/PromotionalItemsQO.js",
+						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service"
+					},
+					"Visible": true,
+					"_Name": "SectionImageCollection0",
+					"_Type": "Section.Type.ImageCollection"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Dashboard_ImgPromos",
+	"_Type": "Page"
+}

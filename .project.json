@@ -1,24 +1,14 @@
 {
 	"Credential": "cf",
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=mdk.demo.app.clone&ClientId=e1e5d277-fe03-4ad6-adb3-876ebd999026&ServerUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&TokenUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	},
 	"CF": {
 		"Target": "https://api.cf.eu10.hana.ondemand.com",
 		"Organization": "d4ea35ce-9cb9-4aef-a690-1a94d1e00c04",
-		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"AutoUrl": true,
-				"Version": "",
-				"StaticUrl": ""
-			},
-			"Destination": [
-				{
-					"CF": "",
-					"MDK": "mdk.demo.app.clone.mobile.destination",
-					"URL": ""
-				}
-			]
-		}
+		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f"
 	},
 	"MobileService": {
 		"Type": "standard",
@@ -28,10 +18,5 @@
 			"com.sap.edm.sampleservice.v2",
 			"mdk.demo.app.clone.mobile.destination"
 		]
-	},
-	"Onboarding": {
-		"Schema": "sapmobilesvcs",
-		"TimeZone": "UTC",
-		"URL": "sapmobilesvcs://?AppId=mdk.demo.app.clone&ClientId=e1e5d277-fe03-4ad6-adb3-876ebd999026&ServerUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com&TokenUrl=https://75c34e16trial-mobileservicespacename-mdk-demo-app-clone.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
 	}
 }

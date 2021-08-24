@@ -19,7 +19,8 @@ export default function InitializeApplication(context) {
     // Grab the user information and store it in app settings
 	return StoreUserInfo(context).then(result => {
         // Initialize the data store
-        return context.executeAction('/MDK_Demo_App_Clone/Actions/Service/InitializeOffline.action');
+       // return context.executeAction('/MDK_Demo_App_Clone/Actions/Service/InitializeOffline.action');
+        return context.executeAction('/MDK_Demo_App_Clone/Actions/Initialize/Initialize.action');
         //return context.executeAction('/MDK_Demo_App_Clone/Actions/Service/DownloadStartedMessage.action');
         
 	});

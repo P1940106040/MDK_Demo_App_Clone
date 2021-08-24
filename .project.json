@@ -18,5 +18,8 @@
 			"com.sap.edm.sampleservice.v2",
 			"mdk.demo.app.clone.mobile.destination"
 		]
+	},
+	"Build": {
+		"SourceMap": true
 	}
 }

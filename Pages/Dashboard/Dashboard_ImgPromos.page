@@ -5,8 +5,8 @@
 				"Icon": "$(PLT,sap-icon://customer,sap-icon://customer, /MDK_Demo_App_Clone/Images/Web/user-blue-40.png)",
 				"IsIconCircular": false,
 				"OnPress": "/MDK_Demo_App_Clone/Actions/Application/UserMenuPopover.action",
-				"Position": "left",
-				"Text": "User",
+				"Position": "Left",
+				"Caption": "User",
 				"Visible": true
 			}
 		]

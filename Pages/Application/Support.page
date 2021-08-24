@@ -4,9 +4,9 @@
 			{
 				"IsIconCircular": false,
 				"OnPress": "/MDK_Demo_App_Clone/Actions/CloseModalComplete.action",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Done",
-				"Text": "Done",
+				"Caption": "Done",
 				"Visible": true
 			}
 		]

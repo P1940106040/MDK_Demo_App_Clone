@@ -8,5 +8,6 @@
 	"OnWillUpdate": "/MDK_Demo_App_Clone/Rules/OnWillUpdate.js",
 	"Styles": "/MDK_Demo_App_Clone/Styles/Styles.less",
 	"Version": "/MDK_Demo_App_Clone/Globals/Application/AppDefinition_Version.global",
-	"_Name": "MDK_Demo_App_Clone"
+	"_Name": "MDK_Demo_App_Clone",
+	"_SchemaVersion": "6.0"
 }

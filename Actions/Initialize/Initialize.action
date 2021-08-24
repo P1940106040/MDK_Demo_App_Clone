@@ -1,0 +1,25 @@
+{
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"OnFailure": "/MDK_Demo_App_Clone/Actions/Initialize/GenericBannerMessage.action",
+	"OnSuccess": "/MDK_Demo_App_Clone/Actions/Initialize/GenericToastMessage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Initializing Application...",
+	"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+	"DefiningRequests": [
+		{
+			"Name": "Customers",
+			"Query": "Customers",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Products",
+			"Query": "Products",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ProductCategories",
+			"Query": "ProductCategories",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

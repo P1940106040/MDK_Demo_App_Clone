@@ -1,59 +1,72 @@
 {
-	"Caption": "/MDK_Demo_App_Clone/Rules/Product/ProductListCaption.js",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"DataPaging": {
-						"PageSize": 50,
-						"ShowLoadingIndicator": false
-					},
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"HighlightSelectedItem": false,
-					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						},
-						"DetailImage": "/MDK_Demo_App_Clone/Rules/Product/GetProductImage.js",
-						"DetailImageIsCircular": false,
-						"PreserveIconStackSpacing": false,
-						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-						"Styles": {
-							"StatusText": "Price"
-						},
-						"Subhead": "{CategoryName}",
-						"SubstatusText": "/MDK_Demo_App_Clone/Rules/Product/GetPromoDiscount.js",
-						"Title": "{Name}"
-					},
-					"Search": {
-						"BarcodeScanner": true,
-						"Enabled": true,
-						"Placeholder": "Product Search"
-					},
-					"Selection": {
-						"ExitOnLastDeselect": true,
-						"LongPressToEnable": "None",
-						"Mode": "None"
-					},
+					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"EntitySet": "Products",
 						"QueryOptions": "$orderby=Name",
 						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service"
 					},
-					"Visible": true,
 					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{Name}",
+						"Subhead": "{CategoryName}",
+						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"SubstatusText": "/MDK_Demo_App_Clone/Rules/Product/GetPromoDiscount.js",
+						"DetailImage": "/MDK_Demo_App_Clone/Rules/Product/GetProductImage.js",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_Demo_App_Clone/Actions/Product/NavToProduct_Detail.action",
+						"Styles": {
+							"StatusText": "Price"
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Product Search",
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Product_List",
-	"_Type": "Page"
+	"Caption": "/MDK_Demo_App_Clone/Rules/Product/ProductListCaption.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

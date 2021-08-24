@@ -1,0 +1,149 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ProfileHeader": {
+						"DetailImage": "/MDK_Demo_App_Clone/Rules/Customer/GetLargeCustomerAvatarURL.js",
+						"DetailImageIsCircular": true,
+						"Headline": "{FirstName}",
+						"Subheadline": "{LastName}",
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}",
+								"_Name": "Phone Number"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}",
+								"_Name": "Email Address"
+							}
+						]
+					},
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{HouseNumber} {Street}",
+							"_Name": "FCAddress",
+							"KeyName": "Address",
+							"Visible": true
+						},
+						{
+							"Value": "{City}",
+							"_Name": "FCCity",
+							"KeyName": "City",
+							"Visible": true
+						},
+						{
+							"Value": "{PostalCode}",
+							"_Name": "FCPostalCode",
+							"KeyName": "Postal Code",
+							"Visible": true
+						},
+						{
+							"Value": "{Country}",
+							"_Name": "FCCountryRegion",
+							"KeyName": "Country / Region"
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{PhoneNumber}",
+							"_Name": "KeyValue2",
+							"KeyName": "Phone",
+							"Visible": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Name": "KeyValue3",
+							"KeyName": "Email",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "Sales Orders"
+					},
+					"Footer": {
+						"_Name": "SectionFooter0",
+						"Caption": "See All",
+						"AttributeLabel": "#Count",
+						"FooterStyle": "attribute",
+						"Visible": true,
+						"UseBottomPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Order Date: $(DT,{CreatedAt},'','')",
+						"Footnote": "{SalesOrderId}",
+						"StatusText": "{LifeCycleStatusName}",
+						"SubstatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:2,maximumFractionDigits:2,useGrouping:true})",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customer_Detail",
+	"Caption": "Customer Detail"
+}

@@ -1,0 +1,209 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell0",
+								"Title": "{Name}",
+								"Visible": true,
+								"Selected": false,
+								"StatusText": "$(C,{Price},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+								"SubstatusText": "/MDK_Demo_App_Clone/Rules/Product/GetPromoDiscount.js",
+								"DetailImage": "/MDK_Demo_App_Clone/Rules/Product/GetProductImage.js",
+								"DetailImageIsCircular": false,
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"Styles": {
+									"StatusText": "Price",
+									"SubstatusText": "Discount"
+								}
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{ShortDescription}",
+							"_Name": "KeyValue0",
+							"KeyName": "Description",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Header": {
+						"_Name": "SectionHeader1",
+						"UseTopPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{CategoryName}",
+							"_Name": "KeyValue4",
+							"KeyName": "Category",
+							"Visible": true
+						},
+						{
+							"Value": "{QuantityUnit}",
+							"_Name": "KeyValue3",
+							"KeyName": "Quantity Unit",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Header": {
+						"_Name": "SectionHeader2",
+						"UseTopPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{QuantityUnit}",
+							"_Name": "KeyValue5",
+							"KeyName": "Quantity",
+							"Visible": true
+						},
+						{
+							"Value": "{MinStock}",
+							"_Name": "KeyValue2",
+							"KeyName": "Min Stock Level",
+							"Visible": true
+						},
+						{
+							"Value": "{LotSize}",
+							"_Name": "KeyValue1",
+							"KeyName": "Lot Size",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue2",
+					"Header": {
+						"_Name": "SectionHeader3",
+						"UseTopPadding": true,
+						"Caption": "Stock Details"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection0",
+					"Header": {
+						"_Name": "SectionHeader4",
+						"UseTopPadding": true,
+						"Caption": "Dimensions"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Value": "{DimensionHeight}{DimensionUnit}",
+								"_Name": "SectionSimplePropertyCell2",
+								"KeyName": "Height",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Value": "{DimensionDepth}{DimensionUnit}",
+								"_Name": "SectionSimplePropertyCell1",
+								"KeyName": "Depth",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Value": "{Weight}{WeightUnit}",
+								"_Name": "SectionSimplePropertyCell3",
+								"KeyName": "Weight",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Value": "{DimensionWidth}{DimensionUnit}",
+								"_Name": "SectionSimplePropertyCell0",
+								"KeyName": "Width",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Product_Detail",
+	"Caption": "Product Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Edit",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

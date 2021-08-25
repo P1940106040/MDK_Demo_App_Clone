@@ -20,8 +20,7 @@
 							"ObjectCell": {
 								"_Name": "SectionObjectCell0",
 								"Title": "{Name}",
-								"Visible": true,
-								"Selected": false,
+								"Subhead": " ",
 								"StatusText": "$(C,{Price},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 								"SubstatusText": "/MDK_Demo_App_Clone/Rules/Product/GetPromoDiscount.js",
 								"DetailImage": "/MDK_Demo_App_Clone/Rules/Product/GetProductImage.js",
@@ -97,43 +96,6 @@
 					}
 				},
 				{
-					"KeyAndValues": [
-						{
-							"Value": "{QuantityUnit}",
-							"_Name": "KeyValue5",
-							"KeyName": "Quantity",
-							"Visible": true
-						},
-						{
-							"Value": "{MinStock}",
-							"_Name": "KeyValue2",
-							"KeyName": "Min Stock Level",
-							"Visible": true
-						},
-						{
-							"Value": "{LotSize}",
-							"_Name": "KeyValue1",
-							"KeyName": "Lot Size",
-							"Visible": true
-						}
-					],
-					"MaxItemCount": 1,
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue2",
-					"Header": {
-						"_Name": "SectionHeader3",
-						"UseTopPadding": true,
-						"Caption": "Stock Details"
-					},
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"Layout": {
-						"NumberOfColumns": 2
-					}
-				},
-				{
 					"_Type": "Section.Type.SimplePropertyCollection",
 					"_Name": "SectionSimplePropertyCollection0",
 					"Header": {
@@ -148,7 +110,7 @@
 					"SimplePropertyCells": [
 						{
 							"SimplePropertyCell": {
-								"Value": "{DimensionHeight}{DimensionUnit}",
+								"Value": "{DimensionHeight}  {DimensionUnit}",
 								"_Name": "SectionSimplePropertyCell2",
 								"KeyName": "Height",
 								"AccessoryType": "none",
@@ -157,7 +119,7 @@
 						},
 						{
 							"SimplePropertyCell": {
-								"Value": "{DimensionDepth}{DimensionUnit}",
+								"Value": "{DimensionDepth}  {DimensionUnit}",
 								"_Name": "SectionSimplePropertyCell1",
 								"KeyName": "Depth",
 								"AccessoryType": "none",
@@ -166,7 +128,7 @@
 						},
 						{
 							"SimplePropertyCell": {
-								"Value": "{Weight}{WeightUnit}",
+								"Value": "{Weight} {WeightUnit}",
 								"_Name": "SectionSimplePropertyCell3",
 								"KeyName": "Weight",
 								"AccessoryType": "none",
@@ -175,7 +137,7 @@
 						},
 						{
 							"SimplePropertyCell": {
-								"Value": "{DimensionWidth}{DimensionUnit}",
+								"Value": "{DimensionWidth}  {DimensionUnit}",
 								"_Name": "SectionSimplePropertyCell0",
 								"KeyName": "Width",
 								"AccessoryType": "none",
@@ -183,6 +145,43 @@
 							}
 						}
 					],
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Quantity}",
+							"_Name": "KeyValue5",
+							"KeyName": "Quantity",
+							"Visible": true
+						},
+						{
+							"Value": "{LotSize}",
+							"_Name": "KeyValue6",
+							"KeyName": "LotSize",
+							"Visible": true
+						},
+						{
+							"Value": "{MinStock}",
+							"_Name": "KeyValue7",
+							"KeyName": "MinStock",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"Target": {
+						"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+						"EntitySet": "Stock",
+						"QueryOptions": "$filter=ProductId eq '{ProductId}'"
+					},
+					"_Name": "SectionKeyValue2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}

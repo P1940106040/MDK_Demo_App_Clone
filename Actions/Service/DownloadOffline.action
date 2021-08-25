@@ -1,7 +1,10 @@
 {
+	"_Type": "Action.Type.OfflineOData.Download",
 	"ActionResult": {
 		"_Name": "sync"
 	},
+	"OnFailure": "/MDK_Demo_App_Clone/Actions/Service/SyncFailureMessage.action",
+	"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
 	"DefiningRequests": [
 		{
 			"AutomaticallyRetrievesStreams": false,
@@ -12,9 +15,11 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "Products",
 			"Query": "Products"
+		},
+		{
+			"Name": "Stock",
+			"Query": "Stock",
+			"AutomaticallyRetrievesStreams": false
 		}
-	],
-	"OnFailure": "/MDK_Demo_App_Clone/Actions/Service/SyncFailureMessage.action",
-	"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
-	"_Type": "Action.Type.OfflineOData.Download"
+	]
 }

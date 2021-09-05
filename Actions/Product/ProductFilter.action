@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Filter",
+	"Filterable": "#Page:Product_List/#Control:SectionedTable0",
+	"PageToOpen": "/MDK_Demo_App_Clone/Pages/Product/Product_Filter.page"
+}

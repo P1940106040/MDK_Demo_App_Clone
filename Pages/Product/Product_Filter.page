@@ -1,0 +1,153 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell4",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "FormCellSorter0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"Caption": "Sort by",
+							"SortByItems": [
+								{
+									"DisplayValue": "Name",
+									"ReturnValue": "Name"
+								},
+								{
+									"DisplayValue": "Category",
+									"ReturnValue": "CategoryName"
+								},
+								{
+									"DisplayValue": "Price (Low to High)",
+									"ReturnValue": "Price asc"
+								},
+								{
+									"DisplayValue": "Price (High to Low)",
+									"ReturnValue": "Price desc"
+								}
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+							"Caption": "Choose Multiple",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select multiple items",
+							"IsSelectedSectionEnabled": false,
+							"AllowDefaultValueIfOneItem": true,
+							"FilterProperty": "CategoryName",
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/MDK_Demo_App_Clone/Services/ServiceName.service",
+									"EntitySet": "Products"
+								},
+								"ObjectCell": {
+									"Description": "{CategoryName}",
+									"DetailImageIsCircular": false,
+									"Icons": [
+									],
+									"PreserveIconStackSpacing": true,
+									"Styles": {
+									}
+								},
+								"ReturnValue": "{CategoryName}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Filter",
+							"_Name": "FormCellFilter0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": false,
+							"Caption": "Filter by",
+							"FilterProperty": [
+								{
+									"DisplayValue": "On Promotion",
+									"ReturnValue": "/MDK_Demo_App_Clone/Rules/Product/ProductOnPromoFilter.js"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Product_Filter",
+	"Caption": "Filter",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Cancel",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Demo_App_Clone/Actions/CloseModalCanceled.action"
+			},
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Done",
+				"SystemItem": "Done",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Demo_App_Clone/Actions/CloseModalComplete.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	},
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"SystemItem": "FlexibleSpace",
+				"ItemType": "Normal"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Reset All",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem2",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"SystemItem": "FlexibleSpace"
+			}
+		]
+	}
+}

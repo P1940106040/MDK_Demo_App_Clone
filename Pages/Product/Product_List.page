@@ -64,7 +64,8 @@
 				"Caption": "Filter",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/MDK_Demo_App_Clone/Actions/Product/ProductFilter.action"
 			}
 		],
 		"_Name": "ActionBar0"

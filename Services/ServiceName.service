@@ -1,5 +1,5 @@
 {
-	"DestinationName": "com.sap.edm.sampleservice.v2",
+	"DestinationName": "com.sap.demo",
 	"LanguageURLParam": "sap-language",
 	"OfflineEnabled": true,
 	"SourceType": "Mobile"

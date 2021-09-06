@@ -15,8 +15,7 @@
 		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/d4ea35ce-9cb9-4aef-a690-1a94d1e00c04/space/b4c5c8db-4c98-4f91-a083-91ac1865f90f",
 		"AppId": "mdk.demo.app.clone",
 		"Destination": [
-			"com.sap.edm.sampleservice.v2",
-			"mdk.demo.app.clone.mobile.destination"
+			"com.sap.edm.sampleservice.v2"
 		]
 	},
 	"Build": {

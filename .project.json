@@ -8,25 +8,7 @@
 	"CF": {
 		"Target": "https://api.cf.eu10.hana.ondemand.com",
 		"Organization": "d4ea35ce-9cb9-4aef-a690-1a94d1e00c04",
-		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f",
-		"Deploy": {
-			"Destination": [
-				{
-					"CF": "com.sap.demo",
-					"MDK": "com.sap.demo",
-					"URL": ""
-				}
-			],
-			"Name": "ns.MDK_Demo_App_Clone",
-			"Version": "1.0.0",
-			"StandaloneRouter": true,
-			"WebClient": {
-				"Dev": false,
-				"Version": "5.0.0",
-				"URL": "https://mdk-webclient-runtime.cfapps.eu10.hana.ondemand.com/runtime-5.0.0/"
-			},
-			"URL": "https://couldfoundryruntimeorgname-mobileservicespacename-nsmdk46c7d623.cfapps.eu10.hana.ondemand.com/nsMDK_Demo_App_Clone/index.html"
-		}
+		"Space": "b4c5c8db-4c98-4f91-a083-91ac1865f90f"
 	},
 	"MobileService": {
 		"Type": "standard",
@@ -36,8 +18,5 @@
 			"com.sap.edm.sampleservice.v2",
 			"com.sap.demo"
 		]
-	},
-	"Build": {
-		"SourceMap": true
 	}
 }

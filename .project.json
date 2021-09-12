@@ -18,5 +18,8 @@
 			"com.sap.edm.sampleservice.v2",
 			"com.sap.demo"
 		]
+	},
+	"Build": {
+		"SourceMap": true
 	}
 }
